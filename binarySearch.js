@@ -1,48 +1,9 @@
 const { performance } = require("perf_hooks");
-
+const { shuffle } = require("./arrayGenerator")
 t = performance.now();
-array = [
-  14,
-  3,
-  24,
-  34,
-  19,
-  36,
-  4,
-  18,
-  12,
-  28,
-  39,
-  32,
-  29,
-  5,
-  21,
-  7,
-  13,
-  33,
-  26,
-  22,
-  8,
-  15,
-  38,
-  11,
-  9,
-  30,
-  20,
-  1,
-  6,
-  0,
-  27,
-  25,
-  35,
-  16,
-  10,
-  31,
-  2,
-  37,
-  17,
-  23,
-];
+
+for (var a=[],i=0;i<40; i++) a[i]=i;
+array = shuffle(a)
 
 const t0 = performance.now();
 // Sort function already implemented to JS

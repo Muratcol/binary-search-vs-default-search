@@ -2,7 +2,7 @@
 
 // Random array generator.
 
-for (var a=[],i=0;i<40; i++) a[i]=i;
+
 
 
 function shuffle(array) {
@@ -17,7 +17,9 @@ function shuffle(array) {
   return array;
 }
 
-a = shuffle(a); 
+
+module.exports =  { shuffle }
+// a = shuffle(a); 
 
 
 
